@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Interest Calculator</h2>
+        <input type="text" name="principalAmt" id="amount" placeholder="Enter your amount" autocomplete="off">
+        <input type="text" name="interestRate" id="rate" placeholder="Enter rate per Annum %" autocomplete="off">
+        <input type="text" name="timeYrs" id="time" placeholder="years" autocomplete="off">
+
+        <div class="interestBtns">
+            <button id="simpleIntrest">Simple Interest</button>
+            <button id="compoundIntrest">Compound Interest</button>
+        </div>
+        <input type="reset" value="Reset" id="reset">
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
