@@ -67,9 +67,11 @@ button:hover {
     background-color: skyblue;
     color: white;
 }
-#reset:hover{
+
+#reset:hover {
     background-color: lightblue;
 }
+
 .resultSection {
     margin: 10px 0;
     font-family: sans-serif;
