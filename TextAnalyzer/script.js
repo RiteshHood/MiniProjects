@@ -26,15 +26,15 @@ function analyzeWord() {
     //capital letters
     let capitalLetterCount = input.split("").filter((letter) => letter > 'A' && letter < 'Z').length;
     let capitalLetters = input.split("").filter((letter) => {
-        if (letter > 'A' && letter < 'Z') {
-            return letter.join(", ");
+        if (letter >= 'A' && letter <= 'Z') {
+            return letter;
         }
     });
 
     //shortest word in text
     let shortestWord = wordArr.reduce((a, b) => {
         return a.length < b.length ? a : b;
-    }, wordArr[0]) || ""
+    }, wordArr[0]) || "";
 
     // let count= wordArr.includes("a");
     let count = 0;
@@ -53,7 +53,10 @@ function analyzeWord() {
 
     //displaying the result
     document.getElementById("result").textContent = `Total Letters: ${totalletters}, Total Words: ${totalWords}, ${countOfAmsg}, ` +
-        `Shortest Word: ${shortestWord}, Longest Word: ${longestWord}, ${capitalLetterMsg}`;
+        `Shortest Word: ${shortestWord}, Longest Word: ${longestWord}, ${capitalLetterMsg}, Capital Letters: ${capitalLetters.join(", ")}`;
+
+        document.getElementById("result").classList.add("resultSection");   
+
 
 }
 

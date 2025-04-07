@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #667eea, #4f1886);
+}
+
+.container {
+    padding: 1rem;
+    background-color: whitesmoke;
+    /* display: block;
+    width: 500px;
+    margin: auto; */
+
+}
+
+input {
+    /* width: 100%; */
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(167, 163, 163);
+}
+
+.tasklist {
+    margin: 10px 0px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#taskList li button:hover {
+    /* background-color: red; */
+    color: white;
+    cursor: pointer;
+}
+#taskList li:hover {
+    background-color: grey;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  .delete-btn {
+    background: none;
+    border: none;
+    color: black; /* You can change this */
+    font-size: 18px; /* Make icon bigger if needed */
+    cursor: pointer;
+    padding: 0;
+    margin-left: 190px;
+  }
+  
+  .delete-btn:hover:hover {
+    background: none;
+  }
