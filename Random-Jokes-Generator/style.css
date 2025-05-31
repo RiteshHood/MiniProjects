@@ -15,14 +15,16 @@
        flex-direction: column;
    }
 
-   .container {
-
-
-       background-color: #ffffff;
-       border-radius: 10px;
-       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-       padding: .5rem;
-   }
+ .container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; /* Centers the container */
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
 
    .buttonsContainer {
        display: flex;
@@ -57,4 +59,19 @@
        font-family: 'Comic Sans MS', cursive, sans-serif;
        color: #333;
        text-align: center;
+   }
+
+
+
+
+
+   /* Responsive section */
+   @media  screen and (max-width:320px){
+    .buttonsContainer{
+        flex-direction: column;
+
+    }
+    button{
+        margin-top: 1rem;
+    }
    }

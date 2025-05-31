@@ -7,18 +7,33 @@ addTaskBtn.addEventListener("click", function(){
     addTaskToList();
 })
 
+// add the task to tasklist 
 function addTaskToList() {
+
+    //get the task entered by user
     let taskValue = document.getElementById("task").value.trim();
+
+    // check if task input is empty ?
     if (taskValue !== "") {
+
+        // if not empty push it to task array
         tasksArr.push({ text: taskValue, completed: false })
     }
+
+    // clear the input field
     document.getElementById("task").value = "";
+
+    // show task
     showtask();
 }
 
+
 function showtask() {
+
+    // make sure tasklist inner html is empty
     taskList.innerHTML="";
-    // let taskList=document.getElementById("taskList");
+
+    // for each task in task array create an li element
     tasksArr.forEach((task) => {
         let li= document.createElement("li");
         
