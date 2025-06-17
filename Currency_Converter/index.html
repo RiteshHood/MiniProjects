@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- For Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form action="">
+            <div class="amount">
+                <p>Enter amount</p>
+                <input type="text" value="100" id="amntInput">
+            </div>
+            <div class="dropdowns">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-Container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" id="fromCountryFlag">
+                        <select name="Country" id="fromCountry">
+                            <!-- <option value="AUD">AUS</option>
+                            <option value="USD">US</option>
+                            <option value="INR" selected>IN</option>
+                            <option value=""></option>
+                            <option value=""></option> -->
+                        </select>
+                    </div>
+                </div>
+                <i class="fa fa-exchange"></i>
+
+                <div class="To">
+                    <p>To</p>
+                    <div class="select-Container">
+                        <img src="https://flagsapi.com/US/flat/64.png" id="toCountryFlag">
+                        <select name="Country" id="toCountry">
+                            <!-- <option value="AUD">AUS</option>
+                            <option value="USD">US</option>
+                            <option value="INR">IN</option>
+                            <option value=""></option>
+                            <option value=""></option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button id="ExchangeBtn">Get Exchange</button>
+        </form>
+        <div id="resultContainer">
+
+        </div>
+    </div>
+
+    <script src="codes (1).js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
